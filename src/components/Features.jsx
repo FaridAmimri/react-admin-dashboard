@@ -13,7 +13,7 @@ function Features() {
         <Money>
           <Amount>2200 €</Amount>
           <Rate>
-            -12 <ArrowDownwardIcon className='negative' />
+            -12,5 <ArrowDownwardIcon className='negative' />
           </Rate>
         </Money>
         <Subtitle>Compared to last month</Subtitle>
@@ -23,7 +23,7 @@ function Features() {
         <Money>
           <Amount>1700 €</Amount>
           <Rate>
-            -9 <ArrowDownwardIcon className='negative' />
+            -9,4 <ArrowDownwardIcon className='negative' />
           </Rate>
         </Money>
         <Subtitle>Compared to last month</Subtitle>
@@ -33,7 +33,7 @@ function Features() {
         <Money>
           <Amount>3400 €</Amount>
           <Rate>
-            +6 <ArrowUpwardIcon />
+            +6,8 <ArrowUpwardIcon />
           </Rate>
         </Money>
         <Subtitle>Compared to last month</Subtitle>
@@ -48,6 +48,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 0 10px 10px 10px;
 `
 
 const Item = styled.div`
