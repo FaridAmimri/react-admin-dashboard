@@ -106,6 +106,7 @@ const Container = styled.div`
   background-color: #fbfbfb;
   position: sticky;
   top: 50px;
+  padding: 5px;
 `
 
 const Wrapper = styled.div`
