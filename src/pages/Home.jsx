@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import { userData } from '../data'
 import Features from '../components/Features'

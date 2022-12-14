@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'

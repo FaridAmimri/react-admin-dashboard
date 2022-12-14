@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 
@@ -23,6 +22,7 @@ function MuiButton({ color, startIcon, type }) {
           color={color}
           size='small'
           startIcon={startIcon}
+          style={{ width: '60px' }}
         >
           {type}
         </Button>

@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import Badge from '@mui/material/Badge'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'

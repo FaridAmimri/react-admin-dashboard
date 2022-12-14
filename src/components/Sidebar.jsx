@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import LineStyleIcon from '@mui/icons-material/LineStyle'
 import AnalyticsIcon from '@mui/icons-material/Analytics'
@@ -15,6 +14,7 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline'
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline'
 import TimelineIcon from '@mui/icons-material/Timeline'
 import ReportIcon from '@mui/icons-material/Report'
+import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
@@ -40,9 +40,11 @@ function Sidebar() {
         <Menu>
           <Title>Quick Menu</Title>
           <List>
-            <Item className='active'>
-              <PermIdentityIcon />
-              Users
+            <Item>
+              <Link to='/users'>
+                <PermIdentityIcon />
+                Users
+              </Link>
             </Item>
             <Item>
               <StorefrontIcon />
@@ -61,7 +63,7 @@ function Sidebar() {
         <Menu>
           <Title>Notifications</Title>
           <List>
-            <Item className='active'>
+            <Item>
               <MailOutlinedIcon />
               Mail
             </Item>
@@ -78,7 +80,7 @@ function Sidebar() {
         <Menu>
           <Title>Staff</Title>
           <List>
-            <Item className='active'>
+            <Item>
               <WorkOutlineIcon />
               Manage
             </Item>
@@ -137,6 +139,9 @@ const Item = styled.li`
   border-radius: 10px;
   padding: 5px;
   cursor: pointer;
+  a {
+    text-decoration: none;
+  }
   :hover {
     background-color: rgb(240, 240, 255);
   }

@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import TableContainer from '@mui/material/TableContainer'
 import Table from '@mui/material/Table'
@@ -10,7 +9,7 @@ import TableBody from '@mui/material/TableBody'
 import TableCell from '@mui/material/TableCell'
 import Paper from '@mui/material/Paper'
 import Avatar from '@mui/material/Avatar'
-import MuiButton from './MuiButton'
+import Button from '@mui/material/Button'
 
 function Transactions() {
   return (
@@ -42,7 +41,9 @@ function Transactions() {
               <TableCell>2 jun 2022</TableCell>
               <TableCell>122.00 €</TableCell>
               <TableCell>
-                <MuiButton color='green' type='Approved' />
+                <Button color='success' variant='outlined' size='small'>
+                  Approved
+                </Button>
               </TableCell>
             </TableRow>
             <TableRow
@@ -60,7 +61,9 @@ function Transactions() {
               <TableCell>2 jun 2022</TableCell>
               <TableCell>122.00 €</TableCell>
               <TableCell>
-                <MuiButton color='error' type='Declined' />
+                <Button color='error' variant='outlined' size='small'>
+                  Declined
+                </Button>
               </TableCell>
             </TableRow>
             <TableRow
@@ -78,7 +81,9 @@ function Transactions() {
               <TableCell>2 jun 2022</TableCell>
               <TableCell>122.00 €</TableCell>
               <TableCell>
-                <MuiButton color='green' type='Approved' />
+                <Button color='success' variant='outlined' size='small'>
+                  Approved
+                </Button>
               </TableCell>
             </TableRow>
             <TableRow
@@ -96,7 +101,9 @@ function Transactions() {
               <TableCell>2 jun 2022</TableCell>
               <TableCell>122.00 €</TableCell>
               <TableCell>
-                <MuiButton color='warning' type='Pending' />
+                <Button color='warning' variant='outlined' size='small'>
+                  Pending
+                </Button>
               </TableCell>
             </TableRow>
           </TableBody>
