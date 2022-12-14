@@ -1,12 +1,11 @@
 /** @format */
 
-import React from 'react'
 import styled from 'styled-components'
 import Avatar from '@mui/material/Avatar'
-import MuiButton from './MuiButton'
+import Button from '@mui/material/Button'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 
-function Users() {
+function Members() {
   return (
     <Container>
       <Title>New join Members</Title>
@@ -20,11 +19,14 @@ function Users() {
             <Username>Anna Keller</Username>
             <Job>Software Engineer</Job>
           </Details>
-          <MuiButton
-            color='gray'
+          <Button
+            color='primary'
+            variant='outlined'
+            size='small'
             startIcon={<VisibilityIcon />}
-            type='Display'
-          />
+          >
+            Display
+          </Button>
         </User>
         <User>
           <Avatar
@@ -35,11 +37,14 @@ function Users() {
             <Username>Anna Keller</Username>
             <Job>Software Engineer</Job>
           </Details>
-          <MuiButton
-            color='gray'
+          <Button
+            color='primary'
+            variant='outlined'
+            size='small'
             startIcon={<VisibilityIcon />}
-            type='Display'
-          />
+          >
+            Display
+          </Button>
         </User>
         <User>
           <Avatar
@@ -50,11 +55,14 @@ function Users() {
             <Username>Anna Keller</Username>
             <Job>Software Engineer</Job>
           </Details>
-          <MuiButton
-            color='gray'
+          <Button
+            color='primary'
+            variant='outlined'
+            size='small'
             startIcon={<VisibilityIcon />}
-            type='Display'
-          />
+          >
+            Display
+          </Button>
         </User>
         <User>
           <Avatar
@@ -65,11 +73,14 @@ function Users() {
             <Username>Anna Keller</Username>
             <Job>Software Engineer</Job>
           </Details>
-          <MuiButton
-            color='gray'
+          <Button
+            color='primary'
+            variant='outlined'
+            size='small'
             startIcon={<VisibilityIcon />}
-            type='Display'
-          />
+          >
+            Display
+          </Button>
         </User>
         <User>
           <Avatar
@@ -80,18 +91,21 @@ function Users() {
             <Username>Anna Keller</Username>
             <Job>Software Engineer</Job>
           </Details>
-          <MuiButton
-            color='gray'
+          <Button
+            color='primary'
+            variant='outlined'
+            size='small'
             startIcon={<VisibilityIcon />}
-            type='Display'
-          />
+          >
+            Display
+          </Button>
         </User>
       </List>
     </Container>
   )
 }
 
-export default Users
+export default Members
 
 const Container = styled.div`
   flex: 1;
