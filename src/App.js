@@ -5,19 +5,21 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
+import Users from './pages/Users'
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
-      <Pages>
-        <Sidebar />
-        <Router>
+      <Router>
+        <Navbar />
+        <Pages>
+          <Sidebar />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/users' element={<Users />} />
           </Routes>
-        </Router>
-      </Pages>
+        </Pages>
+      </Router>
     </div>
   )
 }
