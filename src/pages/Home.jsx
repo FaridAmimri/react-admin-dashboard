@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { userData } from '../data'
 import Features from '../components/Features'
 import Chart from '../components/Chart'
-import Users from '../components/Users'
+import Members from '../components/Members'
 import Transactions from '../components/Transactions'
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
         grid
       />
       <Widgets>
-        <Users />
+        <Members />
         <Transactions />
       </Widgets>
     </Container>
