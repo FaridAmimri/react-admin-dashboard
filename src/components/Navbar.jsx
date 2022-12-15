@@ -59,7 +59,7 @@ const Right = styled.div`
 const Logo = styled.span`
   font-weight: bold;
   font-size: 30px;
-  color: darkblue;
+  color: #1565c0;
   cursor: pointer;
 `
 
