@@ -143,4 +143,5 @@ const Username = styled.span`
 
 const Job = styled.span`
   font-weight: 300;
+  font-size: 14px;
 `
