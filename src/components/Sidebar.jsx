@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import LineStyleIcon from '@mui/icons-material/LineStyle'
 import AnalyticsIcon from '@mui/icons-material/Analytics'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
-import PermIdentityIcon from '@mui/icons-material/PermIdentity'
+import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined'
 import StorefrontIcon from '@mui/icons-material/Storefront'
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 import BarChartIcon from '@mui/icons-material/BarChart'
@@ -40,16 +40,18 @@ function Sidebar() {
         <Menu>
           <Title>Quick Menu</Title>
           <List>
-            <Item>
-              <Link to='/users'>
-                <PermIdentityIcon />
+            <Link to='/users'>
+              <Item>
+                <PeopleAltOutlinedIcon />
                 Users
-              </Link>
-            </Item>
-            <Item>
-              <StorefrontIcon />
-              Products
-            </Item>
+              </Item>
+            </Link>
+            <Link to='/products'>
+              <Item>
+                <StorefrontIcon />
+                Products
+              </Item>
+            </Link>
             <Item>
               <AttachMoneyIcon />
               Transactions
@@ -104,15 +106,14 @@ export default Sidebar
 const Container = styled.div`
   flex: 1;
   width: 150px;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 40px);
   background-color: #fbfbfb;
   position: sticky;
   top: 50px;
-  padding: 5px;
+  padding: 10px;
 `
 
 const Wrapper = styled.div`
-  padding: 10px;
   color: #555;
 `
 
@@ -128,6 +129,10 @@ const Title = styled.h3`
 const List = styled.ul`
   list-style: none;
   padding: 5px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .active {
     background-color: rgb(240, 240, 255);
   }
@@ -139,9 +144,6 @@ const Item = styled.li`
   border-radius: 10px;
   padding: 5px;
   cursor: pointer;
-  a {
-    text-decoration: none;
-  }
   :hover {
     background-color: rgb(240, 240, 255);
   }
