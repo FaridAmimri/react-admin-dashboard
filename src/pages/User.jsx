@@ -149,6 +149,9 @@ const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  a {
+    text-decoration: none;
+  }
 `
 const TitleHeader = styled.h1`
   width: 100%;
