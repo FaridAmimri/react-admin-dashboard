@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
 import Users from './pages/Users'
 import User from './pages/User'
+import NewUser from './pages/NewUser'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/users' element={<Users />} />
             <Route path='/user/:userId' element={<User />} />
+            <Route path='/newUser' element={<NewUser />} />
           </Routes>
         </Pages>
       </Router>
