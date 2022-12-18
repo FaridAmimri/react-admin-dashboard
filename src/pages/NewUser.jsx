@@ -79,50 +79,54 @@ function NewUser() {
             />
           </FormRight>
         </FormWrapper>
-      </Box>
 
-      <RadioSelectWrapper>
-        <RadioWrapper>
-          <FormControl>
-            <FormLabel id='radio'>Gender</FormLabel>
-            <RadioGroup
-              row
-              aria-labelledby='radio-button'
-              defaultValue='female'
-              name='radio'
-              value={value}
-              onChange={handleRadio}
-            >
-              <FormControlLabel
-                value='female'
-                control={<Radio />}
-                label='Female'
-              />
-              <FormControlLabel value='male' control={<Radio />} label='Male' />
-            </RadioGroup>
-          </FormControl>
-        </RadioWrapper>
-        <SelectWrapper>
-          <FormControl style={{ width: '400px' }}>
-            <InputLabel id='select'>Active</InputLabel>
-            <Select
-              labelId='select'
-              id='select'
-              value={active}
-              label='Active'
-              onChange={handleSelect}
-            >
-              <MenuItem value='yes'>Yes</MenuItem>
-              <MenuItem value='no'>No</MenuItem>
-            </Select>
-          </FormControl>
-        </SelectWrapper>
-      </RadioSelectWrapper>
-      <ButtonWrapper>
-        <Button color='primary' variant='contained' size='large'>
-          Create
-        </Button>
-      </ButtonWrapper>
+        <RadioSelectWrapper>
+          <RadioWrapper>
+            <FormControl>
+              <FormLabel id='radio'>Gender</FormLabel>
+              <RadioGroup
+                row
+                aria-labelledby='radio-button'
+                defaultValue='female'
+                name='radio'
+                value={value}
+                onChange={handleRadio}
+              >
+                <FormControlLabel
+                  value='female'
+                  control={<Radio />}
+                  label='Female'
+                />
+                <FormControlLabel
+                  value='male'
+                  control={<Radio />}
+                  label='Male'
+                />
+              </RadioGroup>
+            </FormControl>
+          </RadioWrapper>
+          <SelectWrapper>
+            <FormControl style={{ width: '400px' }}>
+              <InputLabel id='select'>Active</InputLabel>
+              <Select
+                labelId='select'
+                id='select'
+                value={active}
+                label='Active'
+                onChange={handleSelect}
+              >
+                <MenuItem value='yes'>Yes</MenuItem>
+                <MenuItem value='no'>No</MenuItem>
+              </Select>
+            </FormControl>
+          </SelectWrapper>
+        </RadioSelectWrapper>
+        <ButtonWrapper>
+          <Button color='primary' variant='contained' size='large'>
+            Create
+          </Button>
+        </ButtonWrapper>
+      </Box>
     </Container>
   )
 }
