@@ -23,10 +23,12 @@ function Sidebar() {
         <Menu>
           <Title>Dashboard</Title>
           <List>
-            <Item className='active'>
-              <LineStyleIcon />
-              Home
-            </Item>
+            <Link to='/'>
+              <Item className='active'>
+                <LineStyleIcon />
+                Home
+              </Item>
+            </Link>
             <Item>
               <AnalyticsIcon />
               Analytics
