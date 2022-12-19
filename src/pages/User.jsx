@@ -28,10 +28,7 @@ function User() {
       <UserWrapper>
         <Left>
           <Top>
-            <Avatar
-              src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-              sx={{ width: 32, height: 32 }}
-            />
+            <Avatar src='' sx={{ width: 32, height: 32 }} />
             <Details>
               <Identity>Farid Amimri</Identity>
               <Job>Software Engineer</Job>
@@ -110,10 +107,7 @@ function User() {
 
             <ProfilAvatar>
               <AvatarWrapper>
-                <Avatar
-                  src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-                  sx={{ width: 100, height: 100 }}
-                />
+                <Avatar src='' sx={{ width: 100, height: 100 }} />
                 <input
                   accept='image/*'
                   style={{ display: 'none' }}
