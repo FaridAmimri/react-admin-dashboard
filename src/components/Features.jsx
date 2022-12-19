@@ -44,7 +44,6 @@ function Features() {
 export default Features
 
 const Container = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 10px 10px 10px;
