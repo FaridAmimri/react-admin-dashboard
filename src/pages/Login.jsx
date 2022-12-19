@@ -28,7 +28,7 @@ function Login() {
             id='username'
             label='Username'
             value={username}
-            color='success'
+            color='primary'
             onChange={(e) => setUsername(e.target.value)}
           />
           <TextField
@@ -37,14 +37,14 @@ function Login() {
             label='Password'
             value={password}
             type='password'
-            color='success'
+            color='primary'
             onChange={(e) => setPassword(e.target.value)}
           />
           {/* {user.error && <Error>Invalid username or password</Error>} */}
           <Button
             variant='contained'
             size='large'
-            color='success'
+            color='primary'
             onClick={handleClick}
             // disabled={user.isFetching}
           >
