@@ -6,13 +6,14 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
 import LanguageIcon from '@mui/icons-material/Language'
 import SettingsIcon from '@mui/icons-material/Settings'
 import Avatar from '@mui/material/Avatar'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo>BiBi.</Logo>
+          <Logo>Admin.</Logo>
         </Left>
         <Right>
           <Icons>
@@ -23,7 +24,9 @@ function Navbar() {
               <LanguageIcon />
             </Badge>
             <SettingsIcon />
-            <Avatar sx={{ width: 24, height: 24, bgcolor: 'green' }} />
+            <Link to='/login'>
+              <Avatar sx={{ width: 24, height: 24, bgcolor: 'green' }} />
+            </Link>
           </Icons>
         </Right>
       </Wrapper>
