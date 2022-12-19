@@ -11,12 +11,15 @@ function Home() {
   return (
     <Container>
       <Features />
-      <Chart
-        data={userData}
-        title='User Analytics'
-        dataKey='Active User'
-        grid
-      />
+      <ChartWrapper>
+        <Chart
+          className='chart'
+          data={userData}
+          title='User Analytics'
+          dataKey='Active User'
+          grid
+        />
+      </ChartWrapper>
       <Widgets>
         <Members />
         <Transactions />
@@ -31,7 +34,12 @@ const Container = styled.div`
   flex: 4;
 `
 
+const ChartWrapper = styled.div`
+  width: 98%;
+`
+
 const Widgets = styled.div`
   display: flex;
   margin: 20px 0 20px 20px;
+  width: 96%;
 `
