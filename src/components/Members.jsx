@@ -135,6 +135,7 @@ const User = styled.li`
 const Details = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 5px;
 `
 
 const Username = styled.span`
